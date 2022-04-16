@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+تسجيل الدخول
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="sngin.css">
+        <link rel="stylesheet" href="normlaz.css">
+    </head>
+    <body>
+
+        <section class="hero_images">
+            <div class="hero_wapper">
+               <h1>تسجيل دخول</h1>
+               <form class="form_code">
+                   <input class="post_code" type="email" autocomplete="off"  placeholder="Enter Your Mail">
+                   <input class="post_code" type="password" placeholder="Enter Your password">
+        
+                   <button type="submit" > sing in </button>
+               </form>
+            </div>
+             
+        </section>
+<script>
+ $(function () {
+  var nua = navigator.userAgent
+  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+  if (isAndroid) {
+    $('select.form-control').removeClass('form-control').css('width', '100%')
+  }
+})
+</script>
+
+    </body>
+</html>
